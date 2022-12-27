@@ -207,7 +207,7 @@ public class BoardDAO {
 	public void deleteBoard(int board_no) throws Exception {
 		Connection conn = open();
 		
-		String sql = "delete from board where board_no2=?";
+		String sql = "delete from board where board_no=?";
 		PreparedStatement pstmt = conn.prepareStatement(sql);
 		
 		try (conn; pstmt) {
