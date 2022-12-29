@@ -10,6 +10,9 @@
 <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
+    <c:if test="${boardList == null}">
+			<jsp:forward page="list" />
+	</c:if>
     <div class="wrap">
       <table class="board_list">
         <caption>

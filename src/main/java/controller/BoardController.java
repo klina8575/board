@@ -49,6 +49,7 @@ public class BoardController extends HttpServlet {
 		String context = request.getContextPath();
 		String command = request.getServletPath();
 		String site = null;
+		System.out.println(site);
 		
 		//경로 라우팅(경로를 찾아줌)
 		switch (command) {
